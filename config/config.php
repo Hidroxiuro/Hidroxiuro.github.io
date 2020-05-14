@@ -16,7 +16,7 @@ $con = mysqli($server, $username, $password, $db);
 
 if(mysqli_errno()) 
 {
-	echo "Failed to connect: " . mysqli_errno();
+	echo "Failed to connectdsadasdad: " . mysqli_errno();
 }
 
 ?>
