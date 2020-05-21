@@ -82,11 +82,11 @@ if(isset($_POST['register_button'])){
 	if($password != $password2) {
 		array_push($error_array,  "Your passwords do not match<br>");
 	}
-	else {
-		if(preg_match('/[^A-Za-z0-9]/', $password)) {
-			array_push($error_array, "Your password can only contain english characters or numbers<br>");
-		}
-	}
+	// else {
+	// 	if(preg_match('/[^A-Za-z0-9]/', $password)) {
+	// 		array_push($error_array, "Your password can only contain english characters or numbers<br>");
+	// 	}
+	// }
 
 	if(strlen($password > 30 || strlen($password) < 5)) {
 		array_push($error_array, "Your password must be betwen 5 and 30 characters<br>");
@@ -118,9 +118,9 @@ if(isset($_POST['register_button'])){
 			$profile_pic = "assets/images/profile_pics/defaults/head_emerald.png";
 
 
-		$query = mysqli_query($con, "INSERT INTO users VALUES ('', '$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
+		$query = mysqli_query($con, "INSERT INTO users VALUES ('', '$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',','style')");
 
-		array_push($error_array, "<span style='color: #14C800;'>You're all set! Go ahead and login!</span><br>");
+		array_push($error_array, "<span style='color: #14C800;'>Todo listo! Ahora ve e Ingresa!</span><br>");
 
 		//Clear session variables 
 		$_SESSION['reg_fname'] = "";
