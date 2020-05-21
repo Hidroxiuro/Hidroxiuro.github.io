@@ -39,7 +39,7 @@ require 'includes/form_handlers/login_handler.php';
 
 			<div class="login_header">
 				<h1>Bienevenido a FaKeBooK</h1>
-				Ingresa o registrate aqui abajo!
+				Ingresa o registrate aqui abajoooooooooooo!
 			</div>
 			<br>
 			<div id="first">
