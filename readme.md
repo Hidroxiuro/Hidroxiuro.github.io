@@ -4,7 +4,7 @@ PHP, Mysql, Javascript, Jquery and XAMPP server
 
 ### Description
 
-
+Cosa de prueba
 
 This is a social network which resembles the functionality like Facebook in which users can register, login, post things, chat with friends, receive notifications, search for friends , friend requests etc..
 
